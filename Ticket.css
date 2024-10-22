@@ -1,0 +1,80 @@
+/* src/styles/Ticket.css */
+.ticket {
+    background: white;
+    border-radius: 8px;
+    padding: 12px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.ticket-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.ticket-id {
+    color: #6B6B6B;
+    font-size: 14px;
+}
+
+.user-avatar {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    background: #e9e9e9;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.status-dot {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.status-dot.available {
+    background-color: #4caf50;
+}
+
+.status-dot.busy {
+    background-color: #ffc107;
+}
+
+.ticket-title {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.ticket-tags {
+    display: flex;
+    gap: 8px;
+}
+
+.tag {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    color: #6B6B6B;
+    background: #f4f5f8;
+}
+
+.tag.feature {
+    border: 1px solid #e0e0e0;
+}
+
+.tag span {
+    font-size: 10px;
+}

@@ -1,0 +1,8 @@
+/* src/styles/App.css */
+.app {
+    min-height: 100vh;
+}
+
+.board {
+    padding: 20px;
+}
