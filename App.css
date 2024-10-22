@@ -1,8 +1,45 @@
 /* src/styles/App.css */
 .app {
-    min-height: 100vh;
+  min-height: 100vh;
 }
 
 .board {
-    padding: 20px;
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  overflow-x: auto;
+}
+
+.column {
+  min-width: 300px;
+  background: #f4f5f8;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.column-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.column-header h3 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+}
+
+.ticket-count {
+  background: #e0e0e0;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 14px;
+  color: #666;
+}
+
+.tickets {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
